@@ -77,7 +77,7 @@ public class RobotContainer {
         () -> -driver.getLeftX(),
         () -> -driver.getRightX(),
         ()->false,// Robot centric swerve, doesnt work as of now
-        () -> driver.leftBumper().getAsBoolean())); // Slow mode toggle
+        () -> true));//driver.leftBumper().getAsBoolean())); // Slow mode toggle
     intake.setDefaultCommand(intake.Stop());
       //intake.moveTo(Constants.Swerve.intake.IDLE, false)
     fwheel.setDefaultCommand(fwheel.stop());
@@ -435,7 +435,7 @@ public class RobotContainer {
       if (DriverStation.getAlliance().get() == DriverStation.Alliance.Blue){
       s_Swerve.resetOdometry(new Pose2d(1.21, 5.56, new Rotation2d()));}
       else{
-        s_Swerve.resetOdometry(new Pose2d(1.21, 5.56, new Rotation2d()));
+      s_Swerve.resetOdometry(new Pose2d(15.35, 5.56, Rotation2d.fromDegrees(180)));
       }
     }
     return auto;
