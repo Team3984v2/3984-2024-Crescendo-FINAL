@@ -1,0 +1,91 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.7629427135338847,
+      "y": 4.631135153006649
+    },
+    "rotation": -58.67130713219586
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "SpinUp"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Launch"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "StopIntake"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "IntakeDown"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "StartIntake"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "rightPath1"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "StopIntake"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "IntakeUp"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "rightPath2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Launch"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "StopIntake"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "rightDash"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "RightAutos",
+  "choreoAuto": false
+}

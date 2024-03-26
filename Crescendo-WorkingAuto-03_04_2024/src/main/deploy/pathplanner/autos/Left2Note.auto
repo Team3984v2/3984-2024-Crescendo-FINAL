@@ -1,0 +1,79 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.7859976973515199,
+      "y": 6.466867406669286
+    },
+    "rotation": 59.47840399196791
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "SpinUp"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Launch"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "StopIntake"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "IntakeDown"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "StartIntake"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "leftDash"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "StopIntake"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "IntakeUp"
+          }
+        },
+        {
+          "type": "path",
+          "data": {
+            "pathName": "leftPath2"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Launch"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "LeftAutos",
+  "choreoAuto": false
+}

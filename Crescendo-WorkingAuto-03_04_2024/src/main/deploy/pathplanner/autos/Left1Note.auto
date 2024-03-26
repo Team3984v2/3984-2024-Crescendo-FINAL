@@ -1,0 +1,31 @@
+{
+  "version": 1.0,
+  "startingPose": {
+    "position": {
+      "x": 0.7726924717507405,
+      "y": 6.473839455992451
+    },
+    "rotation": 59.47840399196791
+  },
+  "command": {
+    "type": "sequential",
+    "data": {
+      "commands": [
+        {
+          "type": "named",
+          "data": {
+            "name": "SpinUp"
+          }
+        },
+        {
+          "type": "named",
+          "data": {
+            "name": "Launch"
+          }
+        }
+      ]
+    }
+  },
+  "folder": "LeftAutos",
+  "choreoAuto": false
+}
