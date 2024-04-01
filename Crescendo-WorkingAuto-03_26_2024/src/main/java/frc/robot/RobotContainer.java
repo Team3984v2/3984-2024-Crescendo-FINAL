@@ -254,10 +254,10 @@ public class RobotContainer {
           auto.addCommands(
             intake.moveTo(Constants.Swerve.intake.INTAKE, true), 
             intake.In().withTimeout(0.00001), 
-            AutoBuilder.followPath(PathPlannerPath.fromPathFile("testMid4-1")), 
+            AutoBuilder.followPath(PathPlannerPath.fromPathFile("M4Forward")), 
             intake.Stop().withTimeout(0.00001), 
             intake.moveTo(Constants.Swerve.intake.IDLE, false), 
-            AutoBuilder.followPath(PathPlannerPath.fromPathFile("testMid4-2")), 
+            AutoBuilder.followPath(PathPlannerPath.fromPathFile("M4Backward")), 
             fwheel.moveTill(flywheel.SPEAKER, flywheel.SPEAKER), 
             intake.Out().withTimeout(0.2), 
             intake.Stop().withTimeout(0.00001));
@@ -292,10 +292,10 @@ public class RobotContainer {
           auto.addCommands(
             intake.moveTo(Constants.Swerve.intake.INTAKE, true), 
             intake.In().withTimeout(0.00001), 
-            AutoBuilder.followPath(PathPlannerPath.fromPathFile("testMid5-1")), //TODO
+            AutoBuilder.followPath(PathPlannerPath.fromPathFile("M5Forward")), //TODO
             intake.Stop().withTimeout(0.00001), 
             intake.moveTo(Constants.Swerve.intake.IDLE, false), 
-            AutoBuilder.followPath(PathPlannerPath.fromPathFile("testMid5-2")), //TODO
+            AutoBuilder.followPath(PathPlannerPath.fromPathFile("M5Backward")), //TODO
             fwheel.moveTill(flywheel.SPEAKER, flywheel.SPEAKER), 
             intake.Out().withTimeout(0.2), 
             intake.Stop().withTimeout(0.00001));
@@ -330,10 +330,10 @@ public class RobotContainer {
           auto.addCommands(
             intake.moveTo(Constants.Swerve.intake.INTAKE, true), 
             intake.In().withTimeout(0.00001), 
-            AutoBuilder.followPath(PathPlannerPath.fromPathFile("testMid1-1")), //TODO
+            AutoBuilder.followPath(PathPlannerPath.fromPathFile("M6Forward")), //TODO
             intake.Stop().withTimeout(0.00001), 
             intake.moveTo(Constants.Swerve.intake.IDLE, false), 
-            AutoBuilder.followPath(PathPlannerPath.fromPathFile("testMid1-2")), //TODO
+            AutoBuilder.followPath(PathPlannerPath.fromPathFile("M6Backward")), //TODO
             fwheel.moveTill(flywheel.SPEAKER, flywheel.SPEAKER), 
             intake.Out().withTimeout(0.2), 
             intake.Stop().withTimeout(0.00001));
@@ -356,10 +356,10 @@ public class RobotContainer {
           auto.addCommands(
             intake.moveTo(Constants.Swerve.intake.INTAKE, true), 
             intake.In().withTimeout(0.00001), 
-            AutoBuilder.followPath(PathPlannerPath.fromPathFile("testTop1-1")), //TODO
+            AutoBuilder.followPath(PathPlannerPath.fromPathFile("M7Forward")), //TODO
             intake.Stop().withTimeout(0.00001), 
             intake.moveTo(Constants.Swerve.intake.IDLE, false), 
-            AutoBuilder.followPath(PathPlannerPath.fromPathFile("testTop1-2")), //TODO
+            AutoBuilder.followPath(PathPlannerPath.fromPathFile("M7Backward")), //TODO
             fwheel.moveTill(flywheel.SPEAKER, flywheel.SPEAKER), 
             intake.Out().withTimeout(0.2), 
             intake.Stop().withTimeout(0.00001));
@@ -406,10 +406,10 @@ public class RobotContainer {
           auto.addCommands(
             intake.moveTo(Constants.Swerve.intake.INTAKE, true), 
             intake.In().withTimeout(0.00001), 
-            AutoBuilder.followPath(PathPlannerPath.fromPathFile("testMid1-1")), 
+            AutoBuilder.followPath(PathPlannerPath.fromPathFile("M8Forward")), 
             intake.Stop().withTimeout(0.00001), 
             intake.moveTo(Constants.Swerve.intake.IDLE, false), 
-            AutoBuilder.followPath(PathPlannerPath.fromPathFile("testMid1-2")), 
+            AutoBuilder.followPath(PathPlannerPath.fromPathFile("M8Backward")), 
             fwheel.moveTill(flywheel.SPEAKER, flywheel.SPEAKER), 
             intake.Out().withTimeout(0.2), 
             intake.Stop().withTimeout(0.00001));
