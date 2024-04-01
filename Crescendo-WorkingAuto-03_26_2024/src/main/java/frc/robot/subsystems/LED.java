@@ -20,6 +20,9 @@ public class LED extends SubsystemBase{
         state = "idle";
         queue = new Stack<>();
     }
+    public void setState(Boolean state){
+        light.set(state);
+    }
     public void setState(String state){
         this.state = state;
         if (state.equals("idle")){
@@ -30,6 +33,5 @@ public class LED extends SubsystemBase{
         }
     }
     public void periodic(){
-        setState("idle");
     }
 }
