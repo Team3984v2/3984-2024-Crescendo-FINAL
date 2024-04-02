@@ -126,7 +126,7 @@ public class Flywheel extends SubsystemBase{
             ()->(
                 (Math.abs(getErrors(v)[0]) < Constants.Swerve.flywheel.tolerance 
                 && Math.abs(getErrors(v)[1]) < Constants.Swerve.flywheel.tolerance) 
-            ))
+            )).withTimeout(.30)
         );
     }
     public void periodic(){

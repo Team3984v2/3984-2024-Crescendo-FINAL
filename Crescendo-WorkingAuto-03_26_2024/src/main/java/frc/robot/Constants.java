@@ -181,7 +181,7 @@ public final class Constants {
             public static final double tolerance = 0.1;
             public static final class intakeArm{
                 public static final int rotMotorID = 12; //TODO
-                public static final double kP = 0.005;
+                public static final double kP = 0.007;
                 public static final double kI = 0;
                 public static final double kD = 0.0001;
                 public static final double gearRatio = 100;
