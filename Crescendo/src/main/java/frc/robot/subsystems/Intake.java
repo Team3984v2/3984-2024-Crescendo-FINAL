@@ -60,11 +60,11 @@ public class Intake extends SubsystemBase{
 
         // Set Conversion factor for Encoder -> degrees
         intakeArmEncoder.setPositionConversionFactor(
-            360.0/intakeArm.gearRatio //TODO
+            360.0/intakeArm.gearRatio 
         ); 
         // Set Velocity Conversion factor -> degrees/second
         intakeArmEncoder.setVelocityConversionFactor(
-            (360 / intakeArm.gearRatio) / 60.0  //TODO
+            (360 / intakeArm.gearRatio) / 60.0  
         );
         // Set the position to zero
         intakeArmEncoder.setPosition(0);
@@ -120,7 +120,7 @@ public class Intake extends SubsystemBase{
         return runOnce(()->{
             SmartDashboard.putNumber("Goal", goal.getDegrees());
         }).andThen(run(
-            () -> GoTo(goal) //TODO
+            () -> GoTo(goal) 
         ).withTimeout(1)/*until(
             ()->(
                 Math.abs(getErrors(goal).getDegrees()) < Constants.Swerve.intake.tolerance 

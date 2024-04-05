@@ -73,7 +73,7 @@ public class Climber extends SubsystemBase{
         ); 
         // Set Velocity Conversion factor -> degrees/second
         EncoderClimb2.setVelocityConversionFactor(
-            (360 / climber.gearRatio) / 60.0  //TODO
+            (360 / climber.gearRatio) / 60.0  
         );
         // Set the position to zero
         EncoderClimb2.setPosition(0);

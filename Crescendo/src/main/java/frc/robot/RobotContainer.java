@@ -127,11 +127,20 @@ public class RobotContainer {
     
     //parse string into a array of characters
     char[] autonSequence = Preferences.getString(Constants.AutoConstants.kAutoKey, Constants.AutoConstants.defaultAuto).toCharArray();
-    SequentialCommandGroup auto = new SequentialCommandGroup(fwheel.moveTill(flywheel.SPEAKER, flywheel.SPEAKER), intake.Out().withTimeout(0.2), intake.Stop().withTimeout(0.00001));
+    SequentialCommandGroup auto = new SequentialCommandGroup();
     char start = 'M';
     for (char step : autonSequence){
-      if (step == 'T'){start = 'T';}
-      else if(step == 'B'){start = 'B';}
+      if (step == 'T'){start = 'T';
+      auto.addCommands(AutoBuilder.followPath(PathPlannerPath.fromPathFile("Tinit")),
+      fwheel.moveTill(flywheel.SPEAKER, flywheel.SPEAKER), intake.Out().withTimeout(0.2), intake.Stop().withTimeout(0.00001));
+    }
+    else if(step == 'M'){
+      auto.addCommands(fwheel.moveTill(flywheel.SPEAKER, flywheel.SPEAKER), intake.Out().withTimeout(0.2), intake.Stop().withTimeout(0.00001));
+    }
+    else if(step == 'B'){start = 'B';
+      auto.addCommands(AutoBuilder.followPath(PathPlannerPath.fromPathFile("Binit")),
+      fwheel.moveTill(flywheel.SPEAKER, flywheel.SPEAKER), intake.Out().withTimeout(0.2), intake.Stop().withTimeout(0.00001));
+    }
       else if(step == '1'){
         if (start == 'T')auto.addCommands(autoList("T1Forward", "T1Backward"));
         if (start == 'M')auto.addCommands(autoList("M1Forward", "M1Backward"));
@@ -212,6 +221,8 @@ public class RobotContainer {
             intake.Stop().withTimeout(0.00001));
 
   }
+
+ 
   /*public Command getAutonomousCommand(){
     
     //parse string into a array of characters
