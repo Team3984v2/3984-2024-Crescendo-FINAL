@@ -33,7 +33,7 @@ public final class Constants {
         public static final boolean invertGyro = false;//true;
 
         /* Drivetrain Constants */
-        public static final double trackWidth = Units.inchesToMeters(21.73);
+        public static final double trackWidth = .5543;
         public static final Translation2d f1ModuleOffset = new Translation2d(trackWidth/2, trackWidth/2);
         public static final Translation2d f2ModuleOffset = new Translation2d(trackWidth/2, -trackWidth/2);
         public static final Translation2d b1ModuleOffset = new Translation2d(-trackWidth/2, trackWidth/2);
@@ -222,7 +222,7 @@ public final class Constants {
 
         public static final double kPXController = 0.000000000000001;//0.2;//0.1;
         public static final double kPYController = 0.000000000000001;//0.2;// 0.1;
-        public static final double kPThetaController = 7.5;
+        public static final double kPThetaController = 7.5;//7.5
         public static final Translation2d GOALRIGHT = new Translation2d(1, -1);
         public static final Translation2d GOALLEFT = new Translation2d(1, 1);
         public static final Translation2d GOALMIDDLE = new Translation2d(1, 0);

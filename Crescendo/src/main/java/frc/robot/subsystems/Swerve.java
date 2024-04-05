@@ -252,7 +252,8 @@ public class Swerve extends SubsystemBase {
   }
 
   public void setModuleStates(ChassisSpeeds chassisSpeeds) {
-    SwerveModuleState[] desiredStates = Constants.Swerve.swerveKinematics.toSwerveModuleStates(chassisSpeeds);// TODO
+    System.out.println(chassisSpeeds.omegaRadiansPerSecond);
+    SwerveModuleState[] desiredStates = Constants.Swerve.swerveKinematics.toSwerveModuleStates(new ChassisSpeeds(chassisSpeeds.vxMetersPerSecond, chassisSpeeds.vyMetersPerSecond, chassisSpeeds.omegaRadiansPerSecond ));//new ChassisSpeeds(0,0,.5));// TODO
                                                                                                               // NEED TO
                                                                                                               // WORK
                                                                                                               // ONnnjnijni
